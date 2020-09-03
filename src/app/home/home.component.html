@@ -1,0 +1,16 @@
+<h2>
+  This is how asterisk shape looks in different
+  matrix sizes
+</h2>
+<div *ngFor="let asterisk of asterisks;">
+  <dl>
+    <dt>Size of matrix: {{asterisk.matrixSize}}</dt>
+    <dd>
+      <table>
+        <tr *ngFor="let cells of asterisk.asterisks;">
+          <td *ngFor="let cell of cells;" [ngClass]="{'asterisk': cell.indexOf('lowast') != -1}" [innerHTML]="cell"></td>
+        </tr>
+      </table>
+    </dd>
+  </dl>
+</div>

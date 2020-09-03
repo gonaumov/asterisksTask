@@ -1,0 +1,25 @@
+:host {
+  width: 55vw;
+  text-align: left;
+  & > div, h2 {
+    margin-right: auto;
+  }
+}
+
+.asterisk {
+  background-color: black;
+  color: white;
+}
+
+td {
+  width: 10px;
+  height: 10px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+dl {
+  float: left;
+  background-image: none;
+  background-color: white;
+}
